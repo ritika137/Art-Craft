@@ -127,6 +127,41 @@ ul.unstyled{
    padding: 0;
 }
 
+/*************** PRODUCTS*******************/
+
+.productDisplay{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+/*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
+
+.productDisplay .price{
+   font-size: 10px;
+   position: absolute;
+   top: -8px;
+   right: 8px;
+   padding:8px;
+}
+
+.productDisplayA4{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+.productDisplayA4 .price{
+   font-size: 10px;
+   position: absolute;
+   top: -5px;
+   right: 10px;
+   padding:8px;
+}
+
+/*****************************************/
 
 
 
@@ -211,6 +246,42 @@ ul.unstyled{
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
 
+   /*************** PRODUCTS*******************/
+
+.productDisplay{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+/*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
+
+.productDisplay .price{
+   font-size: 10px;
+   position: absolute;
+   top: -8px;
+   right: 8px;
+   padding:8px;
+}
+
+.productDisplayA4{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+.productDisplayA4 .price{
+   font-size: 10px;
+   position: absolute;
+   top: -5px;
+   right: 30px;
+   padding:8px;
+}
+
+/*****************************************/
+
    .thumbnail .caption h3{
 
    font-size: 20px;
@@ -228,6 +299,43 @@ ul.unstyled{
 @media (max-width: 768px) {
 
    
+/*************** PRODUCTS*******************/
+
+.productDisplay{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+/*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
+
+.productDisplay .price{
+   font-size: 10px;
+   position: absolute;
+   top: -8px;
+   right: 8px;
+   padding:8px;
+}
+
+.productDisplayA4{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+.productDisplayA4 .price{
+   font-size: 10px;
+   position: absolute;
+   top: -5px;
+   right: 10px;
+   padding:8px;
+}
+
+/*****************************************/
+
+
 #sideBar{
    display: none;
 }
@@ -313,6 +421,42 @@ ul.unstyled{
 @media (min-width: 1200px) {
 
 
+
+  /*************** PRODUCTS*******************/
+
+.productDisplay{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+/*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
+
+.productDisplay .price{
+   font-size: 10px;
+   position: absolute;
+   top: -8px;
+   right: 8px;
+   padding:8px;
+}
+
+.productDisplayA4{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+.productDisplayA4 .price{
+   font-size: 10px;
+   position: absolute;
+   top: -8px;
+   right: 38px;
+   padding:8px;
+}
+
+/*****************************************/
 
    /* --------------------------------------
    Carousel

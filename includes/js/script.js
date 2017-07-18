@@ -1,73 +1,160 @@
 $(document).ready(function() {
 
+	/** as soon as the toggle thing looses focus **/
+	// $("#navbar-collapse").blur(function (event){
+
+	// 	var screenWidth = window.innerWidth;
+	// 	console.log(screenWidth);
+	// 	if(screenWidth < 768)
+	// 	{
+	// 		$("#collapse-menu").collapse('hide');
+	// 	}
+	// });
+
+	 $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-responsive-collapse").hasClass("navbar-responsive-collapse in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $("button.navbar-toggle").click();
+        }
+    });
+
 });
 
-function displayAll(){
+/** MULTI USE SHEETS CATEGORIES **/
 
-	$(".Catridge, .A3Sized, .ivory , .A4Pastel, .A4ruled").show();
+function displayAllSheets(){
+
+	$(".Catridge, .A3Sized, .ivory , .A4Pastel, .A4ruled, .others, .designed").show();
 
 }
 
-$("#A4pastel").click(function(){
+$(".idA4pastel").click(function(){
 
 	
 	 $(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	$(".Catridge, .A3Sized, .ivory , .A4ruled").hide();
+	$(".Catridge, .A3Sized, .ivory , .A4ruled, .others, .designed").hide();
 	$(".A4Pastel").show();
 
 });
 
-$("#All").click(function(){
+$(".idAll").click(function(){
 
 	$(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	displayAll();
+	displayAllSheets();
 
 });
 
-$("#catridge").click(function(){
+$(".idcatridge").click(function(){
 
 	
 	$(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 	
-	$(".A4Pastel, .A3Sized, .ivory , .A4ruled").hide();
+	$(".A4Pastel, .A3Sized, .ivory , .A4ruled, .others, .designed").hide();
 	$(".Catridge").show();
 
 });
 
-$("#A3size").click(function(){
+$(".idA3size").click(function(){
 
 	
 	$(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	$(".A4Pastel, .Catridge, .ivory , .A4ruled").hide();
+	$(".A4Pastel, .Catridge, .ivory , .A4ruled, .others, .designed").hide();
 	$(".A3Sized").show();
 
 });
 
-$("#A4Ruled").click(function(){
+$(".idA4Ruled").click(function(){
 
 	$(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 	
-	$(".A4Pastel, .Catridge, .A3Sized , .ivory").hide();
+	$(".A4Pastel, .Catridge, .A3Sized , .ivory, .others, .designed").hide();
 	$(".A4ruled").show();
 
 });
 
-$("#Ivory").click(function(){
+$(".idIvory").click(function(){
 
 	
 	$(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	displayAll();
-	$(".A4Pastel, .Catridge, .A3Sized , .A4ruled").not(".ivory").hide();
+	displayAllSheets();
+	$(".A4Pastel, .Catridge, .A3Sized , .A4ruled, .others, .designed").not(".ivory").hide();
 	/*$("ivory").show();*/
 
 });
+
+$(".idothers").click(function(){
+
+	
+	$(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".A4Pastel, .Catridge, .ivory , .A4ruled, .A3Sized, .designed").hide();
+	$(".others").show();
+
+});
+
+$(".iddesign").click(function(){
+
+	$(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+	
+	$(".A4Pastel, .Catridge, .A3Sized , .ivory, .others, .A4ruled").hide();
+	$(".designed").show();
+
+});
+
+
+/***************************************************************************/
+
+/** SCRAP BOOKS CATEGORIES **/
+
+
+function displayAllScrapBooks(){
+
+	$(".ruled, .plain").show();
+
+}
+
+$(".idAllScrapBooks").click(function(){
+
+	$(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	displayAllScrapBooks();
+
+});
+
+$(".idA4ruled").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".plain").hide();
+	$(".ruled").show();
+
+});
+
+$(".idA4plain").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".ruled").hide();
+	$(".plain").show();
+
+});
+
+/***************************************************/
