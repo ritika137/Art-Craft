@@ -9,7 +9,9 @@ $(document).ready(function() {
 	// 	{
 	// 		$("#collapse-menu").collapse('hide');
 	// 	}
+
 	// });
+	 //$("body").autoClearfix(true);
 
 	 $(document).click(function (event) {
         var clickover = $(event.target);
@@ -20,6 +22,20 @@ $(document).ready(function() {
     });
 
 });
+
+///CLEARFIXXXXXXXXXXX
+$.fn.autoClearfix = function(cfloose) {
+    var candidates = [];
+    $("*", $(this)).filter(function() {
+        return $(this).css("float") != "none" && $(this).siblings().length == $(this).siblings().filter(function() {
+            return $(this).css("float") != "none";
+        }).length && (cfloose ? true : $(this).parent().clone().children().remove().end().text().replace(/(\n|\s)/gm, '') === "");
+    }).parent().each(function() {
+        $(this).addClass("clearfix");
+    });
+};
+//////////////////
+
 
 /** MULTI USE SHEETS CATEGORIES **/
 
@@ -158,3 +174,252 @@ $(".idA4plain").click(function(){
 });
 
 /***************************************************/
+
+
+/***************************************************************************/
+
+/** PAINT BRUSH CATEGORIES **/
+
+function displayAllPB(){
+
+	$(".synthetic, .pony, .Pallette , .flat, .round").show();
+
+}
+
+$(".idAllBrushes").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	displayAllPB();
+
+});
+
+$(".idsynthetic").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".pony, .Pallette , .flat, .round").hide();
+	$(".synthetic").show();
+
+});
+
+$(".idpony").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".synthetic, .Pallette , .flat, .round").hide();
+	$(".pony").show();
+
+});
+
+$(".idflat").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".synthetic, .Pallette , .pony, .round").hide();
+	$(".flat").show();
+
+});
+
+$(".idround").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".synthetic, .Pallette , .flat, .pony").hide();
+	$(".round").show();
+});
+
+$(".idpallette").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".synthetic, .pony , .flat, .round").hide();
+	$(".Pallette").show();
+
+});
+
+
+/***************************************************/
+
+
+/***************************************************************************/
+
+/** ART $ CRAFT CATEGORIES **/
+
+function displayAllArt(){
+
+	$(".dmaterial, .dsheet").show();
+
+}
+
+$(".idAllArt").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	displayAllArt();
+
+});
+$(".iddecorative").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".dsheet").hide();
+	$(".dmaterial").show();
+
+});
+$(".iddecorativeSheets").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".dmaterial").hide();
+	$(".dsheet").show();
+
+});
+
+
+
+/***************************************************/
+
+/***************************************************************************/
+
+/** SKETCH BOOK CATEGORIES **/
+
+function displayAllArt(){
+
+	$(".A4Size, .A5Size, .A3Size, .butter").show();
+
+}
+
+$(".idAllSF").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	displayAllArt();
+
+});
+
+$(".idA4SF").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".A5Size, .A3Size, .butter").hide();
+	$(".A4Size").show();
+
+});
+
+$(".idA5SF").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".A4Size, .A3Size, .butter").hide();
+	$(".A5Size").show();
+
+});
+
+$(".idA3SF").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".A5Size, .butter, .A4Size").hide();
+	$(".A3Size").show();
+
+});
+
+$(".idButterSF").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".A5Size, .A3Size, .A4Size").hide();
+	$(".butter").show();
+
+});
+
+$(".idLargeSF").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".A5Size, .A4Size, .butter").hide();
+	$(".A3Sized").show();
+
+});
+
+
+
+
+/***************************************************/
+
+/***************************************************************************/
+
+/** CANVAS CATEGORIES **/
+
+function displayAllcanvas(){
+
+	$(".board, .pad").show();
+
+}
+
+$(".idAllcanvas").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	displayAllcanvas();
+
+});
+
+$(".idcanvaspad").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".board").hide();
+	$(".pad").show();
+
+});
+
+$(".idcanvasboard").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".pad").hide();
+	$(".board").show();
+
+});
+
+/***************************************************/
+
+

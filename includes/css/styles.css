@@ -129,7 +129,7 @@ ul.unstyled{
 
 /*************** PRODUCTS*******************/
 
-.productDisplay{
+.productDisplayPB{
 
    position: relative;
    padding-bottom: 20px;
@@ -138,11 +138,28 @@ ul.unstyled{
 
 /*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
 
-.productDisplay .price{
-   font-size: 10px;
+.productDisplayPB .pricePB{
+   font-size: 12px;
    position: absolute;
-   top: -8px;
-   right: 8px;
+   top: -7px;
+   right: 15px;
+   padding:8px;
+}
+
+.productDisplaySpiral{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+/*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
+
+.productDisplaySpiral .priceSpiral{
+   font-size: 12px;
+   position: absolute;
+   top: -7px;
+   right: 5px;
    padding:8px;
 }
 
@@ -159,6 +176,10 @@ ul.unstyled{
    top: -5px;
    right: 10px;
    padding:8px;
+}
+
+.formatButton{
+   margin-bottom: 15px;
 }
 
 /*****************************************/
@@ -248,7 +269,7 @@ ul.unstyled{
 
    /*************** PRODUCTS*******************/
 
-.productDisplay{
+.productDisplaySpiral{
 
    position: relative;
    padding-bottom: 20px;
@@ -257,11 +278,11 @@ ul.unstyled{
 
 /*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
 
-.productDisplay .price{
+.productDisplaySpiral .priceSpiral{
    font-size: 10px;
    position: absolute;
    top: -8px;
-   right: 8px;
+   right: 5px;
    padding:8px;
 }
 
@@ -301,7 +322,7 @@ ul.unstyled{
    
 /*************** PRODUCTS*******************/
 
-.productDisplay{
+.productDisplaySpiral{
 
    position: relative;
    padding-bottom: 20px;
@@ -310,11 +331,11 @@ ul.unstyled{
 
 /*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
 
-.productDisplay .price{
+.productDisplaySpiral .priceSpiral{
    font-size: 10px;
    position: absolute;
    top: -8px;
-   right: 8px;
+   right: 5px;
    padding:8px;
 }
 
@@ -328,8 +349,8 @@ ul.unstyled{
 .productDisplayA4 .price{
    font-size: 10px;
    position: absolute;
-   top: -5px;
-   right: 10px;
+   top: -7px;
+   right: 35px;
    padding:8px;
 }
 
@@ -417,6 +438,25 @@ ul.unstyled{
    	
    }
 
+@media (max-width: 1199px) and (min-width: 769px){
+
+   .productDisplaySpiral{
+
+   position: relative;
+   padding-bottom: 20px;
+
+}
+
+
+.productDisplaySpiral .priceSpiral{
+   font-size: 0.7em;
+   position: absolute;
+   top: -6px;
+   right: 7px;
+   padding:8px;
+}
+
+}
 /* Large desktop */
 @media (min-width: 1200px) {
 
@@ -462,7 +502,7 @@ ul.unstyled{
    Carousel
    -------------------------------------- */
 #myCarousel .item{
-   height: 500px;
+   height: 550px;
 }
 
 #slide1{
