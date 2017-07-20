@@ -13,6 +13,9 @@ $(document).ready(function() {
 	// });
 	 //$("body").autoClearfix(true);
 
+
+
+
 	 $(document).click(function (event) {
         var clickover = $(event.target);
         var _opened = $(".navbar-responsive-collapse").hasClass("navbar-responsive-collapse in");
@@ -422,4 +425,43 @@ $(".idcanvasboard").click(function(){
 
 /***************************************************/
 
+/*$("#ibSellers").click(function(){
 
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+      console.log(this);
+
+      $(".scrap, .artset, ,canvasP, .paint ").hide();
+      $(".multi, .sketch, .notebook").show();
+	
+
+});
+
+$("#iallProducts").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+      console.log(this);
+
+	$(".scrap, .canvasP, .artset, .multi, .sketch , .paint , .notebook").show();
+
+
+});
+
+$("#inewLaunched").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+      console.log(this);
+
+	
+    $(".scrap, .canvasP, .artset, .multi, .sketch ").hide();
+	$(".paint , .notebook").show();
+
+});*/
