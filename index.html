@@ -38,14 +38,14 @@
 
 			<div class="container"> <!-- to center align the navbar contents with the rest of the website-->
 
-			<a class="navbar-brand" href="/"> <img src="images/test10.png" alt="My logo"> </a>
+			<a class="navbar-brand" href=""> <img src="images/test10.png" alt="My logo"> </a>
 
 			<div class="nav-collapse collapse navbar-responsive-collapse" id= "collapse-menu">
 
 				<ul class="nav navbar-nav">
 					
 					<li class="active"> 
-					<a href="#"> Home </a>
+					<a href=""> Home </a>
 					</li>
 
 					<li class="dropdown">
@@ -69,7 +69,7 @@
 			            <li class="dropdown-header"> More </li>
 
 			            <li class="newLaunched"> <a href="NewlyLaunched.html"> Newly Launched </a> </li>
-			            <li class="bSellers"> <a href="BestSellers.html.html"> Best Sellers </a> </li>
+			            <li class="bSellers"> <a href="BestSellers.html"> Best Sellers </a> </li>
 			            <li class="allProducts"> <a href="AllProducts.html"> All Products </a> </li>
 
 			            </ul>
@@ -93,9 +93,9 @@
 
 				<ul class="dropdown-menu">
 
-					<li> <a href="#moreInfo"><span class="glyphicon glyphicon-map-marker"></span> Our Location </a> </li>
+					<li class="idLocation"> <a href="#moreInfo"><span class="glyphicon glyphicon-map-marker"></span> Our Location </a> </li>
 
-					<li> <a href="#moreInfo"><span class="glyphicon glyphicon-user"></span> Reach Us </a> </li>
+					<li class="idcontact"> <a href="#moreInfo"><span class="glyphicon glyphicon-user"></span> Reach Us </a> </li>
 
 				</ul>
 
@@ -126,9 +126,11 @@
 				<div class="item active" id="slide1">
 					
 					<div class="carousel-caption">
+					 <img src="images/ritikaSmall.png" alt="My logo">
 					<!--Insert logo only instead-->
-					<h4> <span style="color:purple">R</span><span style="color:blue">i</span><span style="color:green">t</span><span style="color:orange">i</span><span style="color:pink">k</span><span style="color:red">a</span> Art &amp; Craft </h4>
+					<!-- <h4> <span style="color:purple">R</span><span style="color:blue">i</span><span style="color:green">t</span><span style="color:orange">i</span><span style="color:pink">k</span><span style="color:red">a</span> Art &amp; Craft </h4>
 					<p> We deal in all kind of art material. </p>
+					</div> -->
 					</div>
 
 				</div> <!--End of first slide in the carousel-->
@@ -137,8 +139,9 @@
 				<div class="item" id="slide2">
 					
 					<div class="carousel-caption">
-					<h4> Sketch Books </h4>
-					<p> We deal in all kind of art material. </p>
+					<!-- <h4> Sketch Books </h4>
+					<p> We deal in all kind of art material. </p> -->
+					 <img src="images/ritikaSmall.png" alt="My logo">
 					</div>
 
 				</div> <!--End of second slide in the carousel-->
@@ -147,8 +150,9 @@
 				<div class="item" id="slide3">
 					
 					<div class="carousel-caption">
-					<h4>Brushes and Canvas </h4>
-					<p> We deal in all kind of art material. </p>
+					<!-- <h4>Brushes and Canvas </h4>
+					<p> We deal in all kind of art material. </p> -->
+					 <img src="images/ritikaSmall.png" alt="My logo" >
 					</div>
 
 				</div> <!--End of third slide in the carousel-->
@@ -172,14 +176,12 @@
 				</div> <!--End of give us a call-->
 
 				<div class="well">
-					<div class="page-header">
+					<div class="page-header" id="about">
 					<h1><b>About Us</b></h1>
 					</div>
 
 					<p>
-					At Ritika Art &amp; Craft , we are helping your world flow better! From bringing ideas to life to helping you realise your potential; letting your messages be heard or articulating your memories, things simply flow better with us.
-					The customers are not only limited to general shops but the company directly caters to schools by undertaking manufacturing as per their requirements. Also with the changing times, the company’s products are available in many of the leading organized retail chains.
-					The company believes in providing products that are not only qualitative in nature but are also appropriately priced. Its customers are a highly satisfied lot. As it not only provides them with products that are of top quality in terms of the paper, design but also because of its commitment to provide them with best possible service and innovative products.
+					Art has the power to transform, to illuminate, to educate, inspire and motivate and art is where work meets love, what we here at Ritika Arts &amp; Craft do is just that. From bringing the beautiful ideas that one has to life, to helping one realise their potential; letting everyone’s messages be heard or articulating memories with the medium being our premium products in terms of quality, design and innovation. Our products are available everywhere from general shops to the leading organised retailers in India. We also cater to the needs of educational institutions by undertaking the manufacturing as per their requirements. We are committed since year <b>2010</b> in providing our valued customers unparalleled products in terms of quality, design, innovation and our service.
 
 					</p>
 
@@ -217,7 +219,7 @@
 				</div>
 				<img src="images/bestSellers.jpg" alt="New Arrivals" class="img-circle">
 				<p>Our Most Purchased Items</p>
-				<a href="BestSellers.html.html" id="ibSellers" class="btn btn-danger btn-block bSellers">View Best Sellers</a>
+				<a href="BestSellers.html" id="ibSellers" class="btn btn-danger btn-block bSellers">View Best Sellers</a>
 			</div>
 		</div> <!--End of 1st element-->
 
@@ -239,7 +241,7 @@
 			<div class="col-sm-12">
 
 			<h2><b>Contact Us</b></h2>
-			<div class="tabbable">
+			<div id="tabs" class="tabbable">
 
 				<ul class="nav nav-tabs">
 					<li class="active">
@@ -248,8 +250,8 @@
 					<a href="#tab2" data-toggle="tab">Reach Us</a> </li>
 				</ul>
 
-			<div class="tab-content">
-				<div class="tab-pane active" id="tab1">
+			<div id="my-tab-content" class="tab-content">
+				<div class="tab-pane contactMap active" id="tab1">
 					
 					<!-- <div class="col-sm-7 pull-left" id="map"> -->
 					<iframe class="col-sm-7" id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13993.78186040415!2d77.166329!3d28.736114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeeeb13dfd1ef1b86!2sRitika+agency(art+%26+craft)!5e0!3m2!1sen!2sin!4v1499081835238" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -265,7 +267,7 @@
 
 				</div> <!--End of Tab 1-->
 
-				<div class="tab-pane" id="tab2">
+				<div class="tab-pane contactInformation" id="tab2">
 					
 					<!--FIX FOR LESS THAN 764 PX -->
 					<img class="col-sm-3" id="companyLogo" src="images/ritika-logo-xbig.png">
@@ -305,10 +307,10 @@
       <div class="col-4 col-lg-3 col-md-3">
         <h5><b>Navigation</b></h5>
         <ul class="unstyled">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">All Products</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AllProducts.html">All Products</a></li>
+          <li ><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#moreInfo">Contact Us</a></li>
         </ul>
       </div><!-- end col-sm-2 -->
 

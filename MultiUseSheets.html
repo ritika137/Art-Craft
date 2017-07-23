@@ -32,7 +32,7 @@
     <div class="navbar navbar-fixed-top">
 
     <!-- Displays all the menu contents in a small drop down type of menu when on a mobile device i.e. those 3 lines icon-->
-    <button  class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+    <button  class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button" id="navbar-collapse">
 
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -42,9 +42,9 @@
 
       <div class="container"> <!-- to center align the navbar contents with the rest of the website-->
 
-      <a class="navbar-brand" href="/"> <img src="images/test10.png" alt="My logo"> </a>
+      <a class="navbar-brand" href=""> <img src="images/test10.png" alt="My logo"> </a>
 
-      <div class="nav-collapse collapse navbar-responsive-collapse ">
+      <div class="nav-collapse collapse navbar-responsive-collapse" id= "collapse-menu">
 
         <ul class="nav navbar-nav">
           
@@ -54,28 +54,29 @@
 
           <li class="dropdown">
           
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Our Products <strong class="caret"></strong></a>
-            <ul class="dropdown-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Our Products <strong class="caret"></strong></a>
+                  <ul class="dropdown-menu">
 
-            <li > <a href="SketchFile.html"> Sketch Files </a> </li>
+                  <li > <a href="SketchFile.html"> Sketch Files </a> </li>
 
-            <li> <a href="CanvasBoard.html"> Canvas Boards </a> </li>
+                  <li> <a href="CanvasBoard.html"> Canvas Boards </a> </li>
 
-            <li class="active"> <a href=""> Multi-Use sheets </a> </li>
+                  <li class="active"> <a href="MultiUseSheets.html"> Multi-Use sheets </a> </li>
 
-            <li> <a href="ScrapBook.html"> Scrap Books </a> </li>
-            <li> <a href="Art.html"> Art &amp; Craft material </a> </li>
-            <li> <a href="SpiralNotebooks.html"> Spiral Notebooks </a> </li>
+                  <li> <a href="ScrapBook.html"> Scrap Books </a> </li>
+                  <li> <a href="Art.html"> Art &amp; Craft material </a> </li>
+                  <li> <a href="SpiralNotebooks.html"> Spiral Notebooks </a> </li>
+                  <li> <a href="PaintBrush.html"> Paint Brushes &amp;<!-- Mixing --> Pallettes </a> </li>
 
-            <li class="divider"> </li>
+                  <li class="divider"> </li>
 
-            <li class="dropdown-header"> More </li>
+                  <li class="dropdown-header"> More </li>
 
-            <li> <a href="NewlyLaunched.html"> Newly Launched </a> </li>
-            <li> <a href="BestSellers.html"> Best Sellers </a> </li>
-            <li> <a href="AllProducts.html"> All Products </a> </li>
+                  <li class="newLaunched"> <a href="NewlyLaunched.html"> Newly Launched </a> </li>
+                  <li class="bSellers"> <a href="BestSellers.html"> Best Sellers </a> </li>
+                  <li class="allProducts"> <a href="AllProducts.html"> All Products </a> </li>
 
-            </ul>
+                  </ul>
 
           </li> <!-- End of dropdown menu services-->
 
@@ -96,9 +97,9 @@
 
         <ul class="dropdown-menu">
 
-          <li> <a href="#moreInfo"><span class="glyphicon glyphicon-map-marker"></span> Our Location </a> </li>
+          <li class="idLocation"> <a href="index.html#moreInfo"><span class="glyphicon glyphicon-map-marker"></span> Our Location </a> </li>
 
-          <li> <a href="#moreInfo"><span class="glyphicon glyphicon-user"></span> Reach Us </a> </li>
+          <li class="idcontactInfo"> <a href="index.html#moreInfo"><span class="glyphicon glyphicon-user"></span> Reach Us </a> </li>
 
         </ul>
 
@@ -170,7 +171,7 @@
               <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
               <h4><b>Pastel paper: All Yellow</b></h4>
-              <span>A4 size(20 Sheets)</span>
+              <span class="details">A4 size(20 Sheets)</span>
             </div>
 
             <div class="col-6 col-sm-4 productDisplayA4 A4Pastel">
@@ -179,7 +180,7 @@
               <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
               <h4><b>Pastel paper: All Black</b></h4>
-              <span>A4 size(20 Sheets)</span>
+              <span class="details">A4 size(20 Sheets)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -189,7 +190,7 @@
               <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
               <h4><b>Pastel paper: All Blue</b></h4>
-              <span>A4 size(20 Sheets)</span>
+              <span class="details">A4 size(20 Sheets)</span>
             </div>
 
               <div class="clearfix visible-lg"></div>
@@ -202,7 +203,7 @@
 
               <h4><b>Pastel paper: All Brown</b></h4>
               
-              <span>A4 size(20 Sheets)</span>
+              <span class="details">A4 size(20 Sheets)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>            
@@ -214,7 +215,7 @@
 
               <h4><b>Pastel paper: All Orange</b></h4>
               
-              <span>A4 size(20 Sheets)</span>
+              <span class="details">A4 size(20 Sheets)</span>
             </div>
 
             <div class="col-6 col-sm-4 productDisplayA4 A4Pastel">
@@ -224,7 +225,7 @@
 
               <h4><b>Pastel paper: All Green</b></h4>
               
-              <span>A4 size(20 Sheets)</span>
+              <span class="details">A4 size(20 Sheets)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -239,7 +240,7 @@
 
               <h4><b>Pastel paper: All Peach</b></h4>
               
-              <span>A-4 size(20 Sheets)</span>
+              <span class="details">A-4 size(20 Sheets)</span>
             </div>
 
             <div class="col-6 col-sm-4 productDisplayA4 A4Pastel">
@@ -249,7 +250,7 @@
 
               <h4><b>Pastel paper: All Gray</b></h4>
               
-              <span>A-4 size(20 Sheets)</span>
+              <span class="details">A-4 size(20 Sheets)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -261,7 +262,7 @@
 
               <h4><b>Pastel paper: All Red</b></h4>
               
-              <span>A-4 size(20 Sheets)</span>
+              <span class="details">A-4 size(20 Sheets)</span>
             </div>
 
             <div class="clearfix visible-lg"></div>
@@ -274,7 +275,7 @@
 
               <h4><b>Pastel paper: AllPurple</b></h4>
               
-              <span>A-4 size(20 Sheets)</span>
+              <span class="details">A-4 size(20 Sheets)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -284,9 +285,9 @@
 
               <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
-              <h4><b>Catridge Sheets: White</b></h4>
+              <h4><b>Cartridge Sheets: Super White (140 gsm)</b></h4>
               
-              <span>A4 size(25 Sheets)</span>
+              <span class="details">A4 size(25 Sheets)</span>
             </div>
 
 
@@ -295,9 +296,9 @@
 
               <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 75.00</div>
 
-              <h4><b>Ivory Paper: White</b></h4>
+              <h4><b>Ivory Paper: White (210 gsm)</b></h4>
               
-              <span>A-4 size(25 Sheets)</span>
+              <span class="details">A-4 size(25 Sheets)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -310,9 +311,9 @@
 
               <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 100.00</div>
 
-              <h4><b>Catridge Sheets: White</b></h4>
+              <h4><b>Cartridge Sheets: Super White (140 gsm)</b></h4>
               
-              <span>A3 size(25 Sheets)</span>
+              <span class="details">A3 size(25 Sheets)</span>
             </div>
 
 
@@ -321,9 +322,9 @@
 
               <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 140.00</div>
 
-              <h4><b>Ivory Paper: White</b></h4>
+              <h4><b>Ivory Paper: White (210 gsm)</b></h4>
               
-              <span>A-3 size(25 Sheets)</span>
+              <span class="details">A-3 size(25 Sheets)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -340,7 +341,7 @@
 
               <h4><b>Neon Colors</b></h4>
               
-              <span>A-4 size(24 Sheets: 6 colors)</span>
+              <span class="details">A-4 size(16 Sheets: 6 colors)</span>
             </div>
 
         
@@ -352,7 +353,7 @@
 
               <h4><b>Pastel Paper: One side Ruled Colored</b></h4>
               
-              <span>A-4 size(20 Sheets: 5 colors)</span>
+              <span class="details">A-4 size(20 Sheets: 5 colors)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -363,11 +364,11 @@
             <div class="col-6 productDisplayA4 A4ruled designed">
               <img src="images/A4RuledDesigned.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
 
-              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 60.00</div>
+              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
               <h4><b>Pastel Paper: One side Ruled and Designed</b></h4>
               
-              <span>A-4 size(20 Sheets: 5 designs)</span>
+              <span class="details">A-4 size(20 Sheets: 5 designs)</span>
             </div>
 
             
@@ -375,11 +376,11 @@
             <div class="col-6 productDisplayA4 A4ruled designed">
               <img src="images/A4RuledDesigned2.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
 
-              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 75.00</div>
+              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
               <h4><b>Pastel Paper: One side Ruled and Designed</b></h4>
               
-              <span>A-4 size(20 Sheets: 5 designs)</span>
+              <span class="details">A-4 size(20 Sheets: 5 designs)</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -390,21 +391,21 @@
             <div class="col-6 productDisplayA4 others">
               <img src="images/A4Handmade.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
 
-              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 65.00</div>
+              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
               <h4><b>Handmade Paper: MultiCored Plain</b></h4>
               
-              <span>A-4 size(20 Sheets: 5 Colors)</span>
+              <span class="details">A-4 size(10 Sheets: 5 Colors)</span>
             </div>
 
             <div class="col-6 productDisplayA4 others">
               <img src="images/Glazepaper.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
 
-              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
+              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 20.00</div>
 
               <h4><b>Glaze Paper</b></h4>
               
-              <span>10 colors: 2 sheets each</span>
+              <span class="details">10 colors: 2 sheets each</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -419,7 +420,7 @@
 
               <h4><b>Pastel paper: All Colors</b></h4>
               
-              <span>A4 size(20 Sheets)</span>
+              <span class="details">A4 size(20 Sheets: 5 colors(light))</span>
             </div>
 
             <div class="col-6 productDisplayA4 A4Pastel">
@@ -429,7 +430,7 @@
 
               <h4><b>Pastel paper: All Colors</b></h4>
               
-              <span>A4 size(20 Sheets)</span>
+              <span class="details">A4 size(20 Sheets: 5 colors(dark))</span>
             </div>
 
 
@@ -441,21 +442,21 @@
              <div class="col-6 productDisplayA4 others">
               <img src="images/Kitepaper2.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
 
-              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
+              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 20.00</div>
 
               <h4><b>Kite Paper</b></h4>
               
-              <span>4 Colors</span>
+              <span class="details">5 Colors: 2 sheets each</span>
             </div>
 
             <div class="col-6 productDisplayA4 others">
               <img src="images/Orgami.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
 
-              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
+              <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> MRP 15.00</div>
 
               <h4><b>Oragami Paper</b></h4>
               
-              <span>6 colors: 24 sheets</span>
+              <span class="details">6 colors: 24 sheets</span>
             </div>
 
             <div class="clearfix visible-sm"></div>
@@ -480,10 +481,10 @@
       <div class="col-4 col-lg-3 col-md-3">
         <h5><b>Navigation</b></h5>
         <ul class="unstyled">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">All Products</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AllProducts.html">All Products</a></li>
+          <li ><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#moreInfo">Contact Us</a></li>
         </ul>
       </div><!-- end col-sm-2 -->
 
@@ -515,7 +516,6 @@
     </div> <!-- ENd of fotter container class-->
     
   </footer>
-  
   
 
 

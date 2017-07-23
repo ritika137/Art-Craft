@@ -305,9 +305,9 @@ $(".iddecorativeSheets").click(function(){
 
 /** SKETCH BOOK CATEGORIES **/
 
-function displayAllArt(){
+function displayAllSF(){
 
-	$(".A4Size, .A5Size, .A3Size, .butter").show();
+	$(".A4Size, .A5Size, .A3Size, .butter, .Big , .small , .imperial").show();
 
 }
 
@@ -317,7 +317,7 @@ $(".idAllSF").click(function(){
 	 $(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	displayAllArt();
+	displayAllSF();
 
 });
 
@@ -327,7 +327,7 @@ $(".idA4SF").click(function(){
 	 $(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	$(".A5Size, .A3Size, .butter").hide();
+	$(".A5Size, .A3Size, .butter, .Big , .small , .imperial").hide();
 	$(".A4Size").show();
 
 });
@@ -338,7 +338,7 @@ $(".idA5SF").click(function(){
 	 $(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	$(".A4Size, .A3Size, .butter").hide();
+	$(".A4Size, .A3Size, .butter, .Big , .small , .imperial").hide();
 	$(".A5Size").show();
 
 });
@@ -349,7 +349,7 @@ $(".idA3SF").click(function(){
 	 $(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	$(".A5Size, .butter, .A4Size").hide();
+	$(".A5Size, .butter, .A4Size, .Big , .small , .imperial").hide();
 	$(".A3Size").show();
 
 });
@@ -360,7 +360,7 @@ $(".idButterSF").click(function(){
 	 $(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	$(".A5Size, .A3Size, .A4Size").hide();
+	$(".A5Size, .A3Size, .A4Size, .Big , .small , .imperial").hide();
 	$(".butter").show();
 
 });
@@ -371,8 +371,30 @@ $(".idLargeSF").click(function(){
 	 $(this).siblings("a").removeClass("active");
       $(this).addClass("active");
 
-	$(".A5Size, .A4Size, .butter").hide();
-	$(".A3Sized").show();
+	$(".A5Size, .A4Size, .butter, .A3Size , .small , .imperial").hide();
+	$(".Big").show();
+
+});
+
+$(".idsmallSF").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".A5Size, .A4Size, .butter, .A3Size , .Big , .imperial").hide();
+	$(".small").show();
+
+});
+
+$(".idImperialSF").click(function(){
+
+	
+	 $(this).siblings("a").removeClass("active");
+      $(this).addClass("active");
+
+	$(".A5Size, .A4Size, .butter, .A3Size , .small , .Big").hide();
+	$(".imperial").show();
 
 });
 
@@ -465,3 +487,75 @@ $("#inewLaunched").click(function(){
 	$(".paint , .notebook").show();
 
 });*/
+
+$(".idcontact").click(function(){
+
+	
+	
+	 $(".contactInformation").siblings("div").removeClass("active");
+      $(".contactInformation").addClass("active");
+  // $('#tab2 div').trigger('click');
+  $('.nav-tabs a:last').tab('show') 
+      console.log(this);
+
+
+});
+
+// $(".idcontactInfo").click(function(){
+
+	
+// // 	console.log("CLICKED");
+// // 	$(document).ready(function() {
+// //    var hash = window.location.hash;
+// //    console.log(hash);
+
+// //    // if (hash != "")
+// //    //     $('#tabs a[href="' + hash + '"]').tab('show');
+// //    // else
+// //    //     $('#tabs a:first').tab('show');
+// //    $(".contactInformation").siblings("div").removeClass("active");
+// //       $(".contactInformation").addClass("active");
+// //   // $('#tab2 div').trigger('click');
+// //   $('.nav-tabs a:last').tab('show') 
+// //       console.log(this);
+// // });
+
+//   //grabs the hash tag from the url
+//   var hash = window.location.hash;
+//   //checks whether or not the hash tag is set
+//   if (hash != "") {
+//     //removes all active classes from tabs
+//     $('#tabs ul').each(function() {
+//       $(this).removeClass('active');
+//     });
+//     $('#my-tab-content div').each(function() {
+//       $(this).removeClass('active');
+//     });
+//     //this will add the active class on the hashtagged value
+//     var link = "";
+//     $('#tabs li').each(function() {
+//       link = $(this).find('a').attr('href');
+//       if (link == hash) {
+//         $(this).addClass('active');
+//       }
+//     });
+//     $('#my-tab-content div').each(function() {
+//       link = $(this).attr('id');
+//       if ('#'+link == hash) {
+//         $(this).addClass('active');
+//       }
+//     });
+//   }
+
+// });
+
+
+$(".idLocation").click(function(){
+
+	console.log("CLICK");
+	 $(".contactMap").siblings("div").removeClass("active");
+      $(".contactMap").addClass("active");
+      $('.nav-tabs a:first').tab('show') 
+      console.log(this);
+
+});
