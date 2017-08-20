@@ -573,7 +573,7 @@ ul.unstyled{
 /*FIX THI SPRIVE TAG FOR SMALL DEVICES**/
 
 .productDisplay .price{
-   font-size: 11px;
+   font-size: 12px;
    position: absolute;
    top: -8px;
    right: 8px;
@@ -588,7 +588,7 @@ ul.unstyled{
 }
 
 .productDisplayA4 .price{
-   font-size: 11px;
+   font-size: 12px;
    position: absolute;
    top: -8px;
    right: 38px;
@@ -596,7 +596,7 @@ ul.unstyled{
 }
 
 .productDisplayA4 .priceLarge{
-   font-size: 11px;
+   font-size: 12px;
    position: absolute;
    top: -8px;
    right: 8px;
@@ -604,12 +604,17 @@ ul.unstyled{
 }
 
 .productDisplayA4 .priceMedium{
-   font-size: 11px;
+   font-size: 12px;
    position: absolute;
    top: -8px;
    right: 30px;
    padding:8px;
 }
+.details{
+   font-size: 17px;
+   
+}
+
 
 /*****************************************/
 
