@@ -36,6 +36,7 @@
     <!-- Custom CSS -->
     <link href="includes/css/styles.css" rel="stylesheet">
     <link href="includes/css/dashboard.css" rel="stylesheet">
+    <link href="includes/css/modal.css" rel="stylesheet">
     
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
@@ -184,7 +185,7 @@
            
 
              <div class="col-6 productDisplayA4 dsheet">
-              <img src="images/Kitepaper2.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/Kitepaper2.jpg" width="400" height="500" class="img-responsive displayImageModal" alt="Kite Paper, 5 Colors: 2 sheets each">
 
               <div class="label label-success priceMedium"><span class="glyphicon glyphicon-tag"></span> MRP 20.00</div>
 
@@ -194,7 +195,7 @@
             </div>
 
             <div class="col-6 productDisplayA4 dsheet">
-              <img src="images/Orgami.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/Orgami.jpg" width="400" height="500" class="img-responsive displayImageModal" alt="Oragami Paper, 6 Colors: 24 sheets each">
 
               <div class="label label-success priceMedium"><span class="glyphicon glyphicon-tag"></span> MRP 15.00</div>
 
@@ -209,7 +210,7 @@
               <div class="clearfix visible-md"></div>
 
               <div class="col-6 productDisplayA4 dsheet">
-              <img src="images/Glazepaper.jpg" width="450" height="600" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/Glazepaper.jpg" width="450" height="600" class="img-responsive displayImageModal" alt="Glaze Paper, 10 Colors: 2 sheets each">
 
               <div class="label label-success priceLarge"><span class="glyphicon glyphicon-tag"></span> MRP 20.00</div>
 
@@ -218,7 +219,7 @@
               <span class="details">10 colors: 2 sheets each</span>
             </div>
             <div class="col-6 productDisplayA4 dsheet">
-              <img src="images/A4Handmade.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/A4Handmade.jpg" width="400" height="500" class="img-responsive displayImageModal" alt="Handmade Paper: MultiCored Plain, A-4 size(20 Sheets: 10 Colors)">
 
               <div class="label label-success priceMedium"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
@@ -233,7 +234,7 @@
               <div class="clearfix visible-md"></div>
 
               <div class="col-6 productDisplayA4 dmaterial">
-              <img src="images/Decoratives.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/Decoratives.jpg" width="400" height="500" class="img-responsive displayImageModal" alt="Art & Craft Set, 12 different types">
 
               <div class="label label-success priceMedium"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
@@ -252,6 +253,19 @@
           
           </div> <!--End of product column-->
         </div> <!--End of Main Row-->
+
+        <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
       </div> <!--End of container-->
     
   <footer>

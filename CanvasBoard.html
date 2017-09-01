@@ -36,6 +36,7 @@
     <!-- Custom CSS -->
     <link href="includes/css/styles.css" rel="stylesheet">
     <link href="includes/css/dashboard.css" rel="stylesheet">
+    <link href="includes/css/modal.css" rel="stylesheet">
     
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
@@ -180,7 +181,7 @@
           <div class="row placeholders">
             
             <div class="col-6 productDisplayA4 A4Pastel board">
-              <img src="images/canvas/Canvas1.jpg" width="350" height="450" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/canvas/Canvas1.jpg" width="350" height="450" class="img-responsive displayImageModal" alt="Canvas Board 10X12, 100% Cotton">
 
               <div class="label label-danger price"><span class="glyphicon glyphicon-tag"></span> MRP 75.00</div>
 
@@ -189,7 +190,7 @@
             </div>
 
             <div class="col-6 productDisplayA4 A4Pastel board">
-              <img src="images/canvas/Canvas2.jpg" width="300" height="400" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/canvas/Canvas2.jpg" width="300" height="400" class="img-responsive displayImageModal" alt="Canvas Board 8X10, 100% Cotton">
 
               <div class="label label-danger price"><span class="glyphicon glyphicon-tag"></span> MRP 50.00</div>
 
@@ -203,7 +204,7 @@
           
 
             <div class="col-12 col-sm-6 productDisplayA4 A4Pastel board">
-              <img src="images/canvas/Canvas3.jpg" width="400" height="500" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/canvas/Canvas3.jpg" width="400" height="500" class="img-responsive displayImageModal" alt="Canvas Board 18X24, 100% Cotton">
               <div class="label label-danger price"><span class="glyphicon glyphicon-tag"></span> MRP 225.00</div>
 
               <h4><b>Canvas Board 18X24</b></h4>
@@ -211,7 +212,7 @@
             </div>
 
             <div class="col-12 col-sm-6 productDisplayA4 A4Pastel pad">
-              <img src="images/canvas/CanvasPad.jpg" width="500" height="300" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/canvas/CanvasPad.jpg" width="500" height="300" class="img-responsive displayImageModal" alt="Canvas Pad 12X18, 100% Cotton">
 
               <div class="label label-danger priceLarge"><span class="glyphicon glyphicon-tag"></span> MRP 150.00</div>
 
@@ -239,6 +240,19 @@
           
           </div> <!--End of product column-->
         </div> <!--End of Main Row-->
+
+        <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+      
       </div> <!--End of container-->
     
     <footer>

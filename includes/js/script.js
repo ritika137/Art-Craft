@@ -1,3 +1,7 @@
+var modal;
+      var modalImg;
+      var captionText;
+      var spanClose;
 $(document).ready(function() {
 
 	/** as soon as the toggle thing looses focus **/
@@ -12,6 +16,20 @@ $(document).ready(function() {
 
 	// });
 	 //$("body").autoClearfix(true);
+	 
+
+      modal = document.getElementById('myModal');
+      modalImg = document.getElementById("img01"); /** getting id of the modal Image **/
+      captionText = document.getElementById("caption"); /** to display the caption inside the modal **/
+      spanClose = document.getElementsByClassName("close")[0];
+
+      spanClose.onclick = function() { 
+    modal.style.display = "none";
+	}
+	modal.onclick = function(){
+	modal.style.display = "none";	
+	}
+
 
 
 
@@ -25,6 +43,34 @@ $(document).ready(function() {
     });
 
 });
+
+
+function displayImage(imageUrl,caption) {
+          
+          modal.style.display = "block";
+            console.log("CLICKED");
+            //imageUrl+=".jpg";
+            //modalImg.src = "<h4>"
+            modalImg.src = imageUrl;
+            //modalImg.src +="</h4>";
+            captionText.innerHTML = caption;
+          //   setTimeout(function(){
+          //   modal.style.display = "none";
+          // }, 10000); /** WILL GET CLOSED AUTOMATICALLY AFTER 10 Sec **/
+        }
+
+ $(".displayImageModal").click(function(){
+
+	
+	 var imageUrl = $(this).attr('src');
+	 var caption = $(this).attr('alt');
+	 console.log(imageUrl);
+	 displayImage(imageUrl, caption);
+
+});
+
+
+
 
 ///CLEARFIXXXXXXXXXXX
 $.fn.autoClearfix = function(cfloose) {

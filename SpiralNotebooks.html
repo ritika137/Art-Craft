@@ -36,6 +36,7 @@
     <!-- Custom CSS -->
     <link href="includes/css/styles.css" rel="stylesheet">
     <link href="includes/css/dashboard.css" rel="stylesheet">
+     <link href="includes/css/modal.css" rel="stylesheet">
     
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
@@ -161,7 +162,7 @@
   <div class="row placeholders">
             
             <div class="col-6 col-sm-4 productDisplaySpiral">
-              <img src="images/SpiralNoteBook1.jpg" width="300" height="400" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/SpiralNoteBook1.jpg" width="300" height="400" class="img-responsive displayImageModal" alt="A4 Size Ruled, 200 pages">
 
               <div class="label label-danger priceSpiral"><span class="glyphicon glyphicon-tag"></span> MRP 80.00</div>
 
@@ -170,7 +171,7 @@
             </div>
 
             <div class="col-6 col-sm-4 productDisplaySpiral">
-              <img src="images/SpiralNoteBook2.jpg" width="300" height="400" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/SpiralNoteBook2.jpg" width="300" height="400" class="img-responsive displayImageModal" alt="A4 Size Ruled, 300 pages">
 
               <div class="label label-danger priceSpiral"><span class="glyphicon glyphicon-tag"></span> MRP 115.00</div>
 
@@ -182,7 +183,7 @@
             <div class="clearfix visible-sm"></div>
 
             <div class="col-6 col-sm-4 productDisplaySpiral">
-              <img src="images/SpiralNoteBook3.jpg" width="300" height="400" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/SpiralNoteBook3.jpg" width="300" height="400" class="img-responsive displayImageModal" alt="A4 Size Ruled, 400 pages">
 
               <div class="label label-danger priceSpiral"><span class="glyphicon glyphicon-tag"></span> MRP 150.00</div>
 
@@ -195,7 +196,7 @@
 
 
             <div class="col-6 col-sm-4 productDisplaySpiral">
-              <img src="images/SpiralNoteBook4.jpg" width="300" height="400" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/SpiralNoteBook4.jpg" width="300" height="400" class="img-responsive displayImageModal" alt="A4 Size Ruled, 500 pages">
 
               <div class="label label-danger priceSpiral"><span class="glyphicon glyphicon-tag"></span> MRP 185.00</div>
 
@@ -212,7 +213,22 @@
           
           </div> <!--End of product column-->
         </div> <!--End of Main Row-->
+
+        <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
       </div> <!--End of container-->
+
+      
     
   
     <footer>
