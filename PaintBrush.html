@@ -36,6 +36,7 @@
     <!-- Custom CSS -->
     <link href="includes/css/styles.css" rel="stylesheet">
     <link href="includes/css/dashboard.css" rel="stylesheet">
+     <link href="includes/css/modal.css" rel="stylesheet">
     
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
@@ -185,7 +186,7 @@
           <div class="row placeholders">
             
             <div class="col-6 col-sm-4 productDisplayPB flat synthetic">
-              <img src="images/BrushFlatGreen.jpg" width="200" height="320" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/BrushFlatGreen.jpg" width="200" height="320" class="img-responsive displayImageModal" alt="Flat Synthetic Hair Brushes, Set of 4,(Also available loose from sizes 1-12)">
 
               <div class="label label-success pricePBsmall"><span class="glyphicon glyphicon-tag"></span> MRP 150.00</div>
 
@@ -195,7 +196,7 @@
             </div>
 
             <div class="col-6 col-sm-4 productDisplayPB flat synthetic">
-              <img src="images/BrushFlatSynthetic.jpg" width="280" height="350" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/BrushFlatSynthetic.jpg" width="280" height="350" class="img-responsive displayImageModal" alt="Flat Synthetic Hair Brushes, Set of 7,(Also available loose from sizes 1-12)">
 
               <div class="label label-success pricePB"><span class="glyphicon glyphicon-tag"></span> MRP 430.00</div>
 
@@ -207,7 +208,7 @@
             <div class="clearfix visible-sm"></div>
 
             <div class="col-6 col-sm-4 productDisplayPB round synthetic">
-              <img src="images/BrushRoundSynthetic.jpg" width="200" height="320" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/BrushRoundSynthetic.jpg" width="200" height="320" class="img-responsive displayImageModal" alt="Round Synthetic Hair Brushes,Set of 4,(Also available loose from sizes 000-12)">
               <div class="label label-success pricePBsmall"><span class="glyphicon glyphicon-tag"></span> MRP 90.00</div>
 
               <h4><b>Round Synthetic Hair Brushes</b></h4>
@@ -219,7 +220,7 @@
             <div class="clearfix visible-lg"></div>
 
             <div class="col-6 col-sm-4 productDisplayPB flat pony">
-              <img src="images/BrushFlatPony.jpg" width="270" height="320" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/BrushFlatPony.jpg" width="270" height="320" class="img-responsive displayImageModal" alt="Flat Pony Hair Brushes,Set of 7,(Also available loose from sizes 1-12)">
 
               <div class="label label-success pricePB"><span class="glyphicon glyphicon-tag"></span> MRP 245.00</div>
 
@@ -231,7 +232,7 @@
             <div class="clearfix visible-sm"></div>
 
             <div class="col-6 col-sm-4 productDisplayPB round pony">
-              <img src="images/BrushRoundPony.jpg" width="270" height="320" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/BrushRoundPony.jpg" width="270" height="320" class="img-responsive displayImageModal" alt="Round Pony Hair Brushes,Set of 7,(Also available loose from sizes 000-12)">
 
               <div class="label label-success pricePB"><span class="glyphicon glyphicon-tag"></span> MRP 170.00</div>
 
@@ -241,7 +242,7 @@
             </div>
 
             <div class="col-6 col-sm-4 productDisplayPB round pony">
-              <img src="images/BrushRoundPonySmall.jpg" width="200" height="320" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/BrushRoundPonySmall.jpg" width="200" height="320" class="img-responsive displayImageModal" alt="Round Pony Hair Brushes,Set of 4,(Also available loose from sizes 000-12)">
 
               <div class="label label-success pricePBsmall"><span class="glyphicon glyphicon-tag"></span> MRP 65.00</div>
 
@@ -255,7 +256,7 @@
             <div class="clearfix visible-lg"></div>
 
             <div class="col-6 col-sm-4 productDisplayPB Pallette">
-              <img src="images/MixingPallete.jpg" width="280" height="320" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="images/MixingPallete.jpg" width="280" height="320" class="img-responsive displayImageModal" alt="Color Mixing Pallette">
 
               <div class="label label-success pricePB"><span class="glyphicon glyphicon-tag"></span> MRP 30.00</div>
 
@@ -275,6 +276,20 @@
           
           </div> <!--End of product column-->
         </div> <!--End of Main Row-->
+
+        <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
+
       </div> <!--End of container-->
    
 
